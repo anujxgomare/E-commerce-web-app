@@ -1,0 +1,6 @@
+[build]
+builder = "paketobuildpacks/builder:base"
+buildCommand = "cd ecommerce && mvn -DskipTests=true clean package"
+
+[start]
+cmd = "java -jar ecommerce/target/*.jar"
